@@ -28,17 +28,17 @@ dockerHubOrg = args.org
 wildcardDnsHost = args.dns
 
 # Print info
-print ""
-print "======="
-print "DockerHub User: " + dockerHubUser
-print "DockerHub Org: " + dockerHubOrg
-print "Default Tag: " + dockerHubTag
-print "Wildcard DNS Host: " + wildcardDnsHost
-print "======="
-print ""
+print("")
+print("===== MCP-UP! =====")
+print("DockerHub User: " + dockerHubUser)
+print("DockerHub Org: " + dockerHubOrg)
+print("Default Tag: " + dockerHubTag)
+print("Wildcard DNS Host: " + wildcardDnsHost)
+print("===================")
+print("")
 
 if args.clean:
-  system("set -x;make clean")
+  system("set -x; make clean")
 
 bashCommand = '''
 ansible-playbook ./installer/playbook.yml \\
