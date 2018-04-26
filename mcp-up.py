@@ -52,6 +52,7 @@ ansible-playbook ./installer/playbook.yml \\
 oc login -u system:admin
 oc adm policy add-cluster-role-to-user cluster-admin admin
 oc adm policy add-cluster-role-to-user access-asb-role admin
+oc adm policy add-cluster-role-to-user cluster-admin developer
 oc login -u admin -p admin
 '''.format(
   dockerHubUser = dockerHubUser,
