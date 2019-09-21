@@ -30,5 +30,5 @@ $ chmod u+x mcp-up.py
 ```sh
 echo '# Global DockerHub credentials:' >>~/.bash_profile
 echo 'export DOCKERHUB_USER="username"' >>~/.bash_profile
-echo 'export DOCKERHUM_PASS="password"' >>~/.bash_profile
+echo 'export DOCKERHUB_PASS="password"' >>~/.bash_profile
 ```
